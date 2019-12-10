@@ -2,7 +2,8 @@
 ### SF Crime Statistics with Spark Streaming 
 
 **1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?**
-By increasing the `spark.streaming.kafka.maxRatePerPartition` into higher number and see the data ingestion.
+
+By referring to the `processedRowsPerSecond`. The higher number we get on here, it means that we could process more rows in second, which means higher throughput. Several recommended parameters that we could change are defined below.
 
 
 **2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?**
